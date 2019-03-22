@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "Ai Fixer",
+  "version": "1.0",
+
+  "description": "Changes all mentions of \"AI\" or \"artificial intelligence\" in a webpage to \"if statements.\"",
+
+  "icons": {
+    "48": "ok_hand.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "correctAI.js" ]
+    }
+  ]
+
+}
